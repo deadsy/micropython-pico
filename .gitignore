@@ -1,7 +1,5 @@
 build
 dl
 .stamp*
-ext/picotool
-ext/sdk
 ext/usr
 src/micropython

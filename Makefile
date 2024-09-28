@@ -33,6 +33,8 @@ SRC_PATH = $(TOP)/src/micropython
 
 .PHONY: all
 all: .stamp_ext .stamp_src
+	make -C $(SRC_PATH)/mpy-cross
+	PICO_TOOLCHAIN_PATH=$(EXT)/usr/bin make -C $(SRC_PATH)/ports/rp2
 
 #------------------------------------------------------------------------------
 
